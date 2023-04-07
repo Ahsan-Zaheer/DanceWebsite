@@ -1,0 +1,14 @@
+extends base.pug
+block style 
+    style 
+        include style.css
+        include con-style.css 
+block content
+    h1.header Contact Us
+    form.my-form(action="/contact", method="post")
+        input.form-item(type="text", name="name", placeholder="Your Name..")
+        input.form-item(type="number", name="phone", placeholder="Your Phone No..")
+        input.form-item(type="email", name="mail", placeholder="Email Address..")
+        textarea.form-item(name="address", cols="30", rows="10", placeholder="Your Permanent Address..")
+        textarea.form-item(name="about", cols="30", rows="10", placeholder="Tell Us About You..")
+        button.btn(type="submit") Submit 

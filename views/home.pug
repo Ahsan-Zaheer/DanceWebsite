@@ -1,0 +1,42 @@
+extends base.pug
+block style 
+    style 
+        include style.css 
+block content 
+    div.picture
+        p.intro Welcome to Ahsan's Dance Academy
+        p.small-intro ~ Eat Sleep Dance Repeat  
+    div.mission
+        div.upper 
+            | Our Missions
+        div.blank1 
+        div.cards.card1
+            | Dance Perfection
+            div.card-logo
+                img.logo_2(src="../static/logo_2.png", alt="logo")
+                | Best Dance Academy across
+                br
+                | the World. 
+        div.cards.card2
+            | Dance The Way You Like
+            div.card-logo
+                img.logo_2(src="../static/logo_3.png", alt="logo")
+                | Dance is the Hidden Langugae
+                br
+                | of Soul
+        div.cards.card3
+            | Expert Teaching
+            div.card-logo
+                img.logo_2(src="../static/logo_4.png", alt="logo")
+                | Dance is the Key of
+                br
+                | Happiness
+        div.blank2
+    div.sponsor
+        | Our Sponsors
+        div.spon-logo
+            img.spon(src="../static/sponsor_1.png", alt="sponsor") 
+            img.spon(src="../static/sponsor_2.png", alt="sponsor") 
+            img.spon(src="../static/sponsor_3.png", alt="sponsor") 
+            img.spon(src="../static/sponsor_4.png", alt="sponsor")
+    

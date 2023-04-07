@@ -1,0 +1,20 @@
+doctype html 
+html
+  head
+    title #{title}
+    block style
+  body
+    nav 
+        ul.navbar
+            div.logo
+                img.logo_1(src="../static/logo_1.png", alt="logo")
+                | ADA 
+            li.nav-items #[a(href="/") Home]
+            li.nav-items #[a(href="/") About ]
+            li.nav-items #[a(href="/") Services]
+            li.nav-items #[a(href="/") Class Info]
+            li.nav-items #[a(href="/contact") Contact Us ]
+    block content
+    block foot
+        footer
+            | CopyRight (C) 2023  - AhsanDanceAcademy.com | All Rights Reserved

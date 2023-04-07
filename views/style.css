@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 42, 45);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-items{
+    list-style: none;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+.logo{
+    font-family: 'ZCOOL QingKe HuangYou';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-right: 40px;
+}
+.logo_1{
+    height: 50px;
+    filter: invert(1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+.picture{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: center/cover no-repeat url("/static/bg-1.jpg") ;
+    color: white;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 55px;
+}
+.small-intro{
+    font-size: 35px;
+}
+.upper{
+    grid-area: upper;
+    text-align: center;
+    font-size: 35px;
+}
+.cards{
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 250px;
+    padding: 10px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+    margin: 0px 30px ;
+}
+.card3{
+    grid-area: card3;
+}
+.blank1{
+    grid-area: blank1;
+}
+.blank2{
+    grid-area: blank2;
+}
+.mission{
+    display: grid;
+    height: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    font-family: 'Roboto Mono', monospace;
+    grid-template-areas:
+    "upper upper upper upper upper"
+    "blank1 card1 card2 card3 blank2";
+}
+.sponsor{
+    background-color: rgba(247, 239, 229, 0.783);
+    height: 300px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+footer{
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+.card-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_2{
+    height: 150px;
+    width: 150px;
+}
+.spon{
+    height: 150px;
+    margin: 20px;
+}
